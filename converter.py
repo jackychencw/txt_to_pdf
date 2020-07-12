@@ -35,7 +35,7 @@ def txtToPdf(filename):
     f = open(fpath, encoding=enc)
     try:
         story = []
-        pdf_name = filename.replace('txt', 'pdf')
+        pdf_name = filename[:-3] + 'pdf'
         print(pdf_name)
         for line in f.readlines():
             line = re.sub(r"</?[a-zA-z]>?", "", line)

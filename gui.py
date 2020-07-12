@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import wx
 import time
@@ -13,8 +14,7 @@ class MyForm(wx.Frame):
 
     #----------------------------------------------------------------------
     def __init__(self):
-        wx.Frame.__init__(self, None, wx.ID_ANY,
-                          "pdf转换器")
+        wx.Frame.__init__(self, None, wx.ID_ANY, "pdf转换器")
         self.panel = wx.Panel(self, wx.ID_ANY)
         self.currentDirectory = os.getcwd()
         
